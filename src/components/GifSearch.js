@@ -16,7 +16,7 @@ export default class GifSearch extends Component {
 
   render(){
     return(
-      <form onSubmit={this.props.onSearchSubmit}>
+      <form onSubmit={() => this.props.onSearchSubmit(this.state.input)}>
       <Label>
         Enter a Search Term:</br>
         <input type="text" value={this.state.input} onChange={this.handleChange} />
