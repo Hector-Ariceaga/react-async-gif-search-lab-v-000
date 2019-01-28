@@ -16,14 +16,14 @@ export default class GifListContainer extends Component{
   }
 
   onSearchSubmit = () => {
-    
+
   }
 
   componentDidMount() {
     query = this.state.query
     fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g`)
     .then(res => res.json())
-    .then(data => 
+    .then(data =>
       gifs = data.slice(0,2)
       urls = gifs.images.original.url
       this.setState({
