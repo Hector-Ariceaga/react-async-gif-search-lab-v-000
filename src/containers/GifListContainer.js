@@ -17,10 +17,6 @@ export default class GifListContainer extends Component{
   }
 
   onSearchSubmit = () => {
-
-  }
-
-  componentDidMount() {
     fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g`)
     .then(res => res.json())
     .then(data => {
@@ -28,5 +24,9 @@ export default class GifListContainer extends Component{
         gifs: data.map(gif => ({url: gif.images.original.url}))
       })
     })
+  }
+
+  componentDidMount() {
+    this.onSearchSubmit()
   }
 }
