@@ -17,7 +17,7 @@ export default class GifListContainer extends Component{
   }
 
   onSearchSubmit = () => {
-    
+
   }
 
   componentDidMount() {
