@@ -18,7 +18,7 @@ export default class GifSearch extends Component {
     return(
       <Label>
         Enter a Search Term:</br>
-        <input type="text" value={this.state.input} onChange={this.handleChange} 
+        <input type="text" value={this.state.input} onChange={this.handleChange}
       </Label>
     )
   }
