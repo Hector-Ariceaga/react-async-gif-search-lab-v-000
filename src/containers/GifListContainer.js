@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import GifList from './components/GifList.js'
-import GifSearch from './compoonents/GifSearch.js'
+import GifList from '../components/GifList.js'
+import GifSearch from '../compoonents/GifSearch.js'
 
 export default class GifListContainer extends Component{
   state = {
