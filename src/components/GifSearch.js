@@ -10,8 +10,6 @@ export default class GifSearch extends Component {
     this.setState({
       input: value
     })
-
-    }
   }
 
   render(){
