@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 
 export default class GifList extends Component {
 
-  render(){
+  GifList = props => {
     return(
       <ul>
-        {this.props.gifs.map((gif,id) => <li key={id}>{gif}</li>)}
+        {props.gifs.map((gif) => <li key={gif.url}><img src={gif.url} alt='gif'/></li>)}
       </ul>
     )
   }
