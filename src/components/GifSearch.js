@@ -10,10 +10,10 @@ export default class GifSearch extends Component {
     this.setState({
       input: value
     })
-      
+
     }
   }
-  
+
   render(){
     return(
       <input type="text" value={this.state.input} onChange={this.handleChange} >
