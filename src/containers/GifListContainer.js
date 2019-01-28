@@ -17,7 +17,7 @@ export default class GifListContainer extends Component{
 
   onSearchSubmit = (input) => {
     this.setState({
-      query = input
+      query: input
     })
   }
 
